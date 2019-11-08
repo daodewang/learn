@@ -6,7 +6,7 @@ ss = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ss.bind(('127.0.0.1', 9999))
 ss.listen(5)
 n = 0
-print('Server is working ……')
+print('Sel server is working ……')
 
 sel = selectors.DefaultSelector()
 sel.register(ss, selectors.EVENT_READ, data=(-1, -1))

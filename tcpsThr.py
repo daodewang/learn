@@ -42,5 +42,6 @@ while True:
             for t in thrs:
                 t.join()
             print('all threads are finished')
+            s.close()
             break
 
